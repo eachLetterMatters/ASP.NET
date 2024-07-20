@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/User.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="Foodie.User.Registration" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <script>
+    <script>
         // For disappearing alert messages
         window.onload = function () {
             setTimeout(function () {

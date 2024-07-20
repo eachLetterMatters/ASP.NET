@@ -4,7 +4,7 @@
 
     <script>
         // For disappearing alert messages
-        window.onload = function(){
+        window.onload = function () {
             setTimeout(function () {
                 document.getElementById("<%=lblMsg.ClientID%>").style.display = "none";
 
@@ -25,12 +25,11 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <div class="pcoded-inner-content pt-0">
 
-        <div class="pcoded-inner-content pt-0">
-            <div class="align-align-self-end">
-                <asp:Label ID="lblMsg" runat="server" Visible="false"></asp:Label>
-            </div>
+        <div class="align-align-self-end">
+            <asp:Label ID="lblMsg" runat="server" Visible="false"></asp:Label>
         </div>
         <div class="main-body">
             <div class="page-wrapper">
@@ -65,11 +64,11 @@
                                                     <asp:CheckBox ID="cbIsActive" runat="server" Text="&nbsp; IsActive" CssClass="form-check-input" />
                                                 </div>
                                                 <div class="pb-5">
-                                                    <asp:Button ID="btnAddOrUpdate" runat="server" Text="Add" CssClass="btn btn-primary" 
-                                                        OnClick="btnAddOrUpdateClick"/>
+                                                    <asp:Button ID="btnAddOrUpdate" runat="server" Text="Add" CssClass="btn btn-primary"
+                                                        OnClick="btnAddOrUpdateClick" />
                                                     &nbsp
-                                                    <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="btn btn-primary" 
-                                                        CausesValidation="false" OnClick="btnClearClick"/>
+                                                    <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="btn btn-primary"
+                                                        CausesValidation="false" OnClick="btnClearClick" />
                                                 </div>
                                                 <div>
                                                     <asp:Image ID="imgCategory" runat="server" CssClass="img-thumbnail" />
@@ -89,13 +88,13 @@
                                                         <HeaderTemplate>
                                                             <table class="table data-table-export table-hover nowrap">
                                                                 <thead>
-                                                                <tr>
-                                                                    <th class="table-plus">Name</th>
-                                                                    <th>Image</th>
-                                                                    <th>IsActive</th>
-                                                                    <th>CreatedDate</th>
-                                                                    <th class="datatable-nosort">Action</th>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <th class="table-plus">Name</th>
+                                                                        <th>Image</th>
+                                                                        <th>IsActive</th>
+                                                                        <th>CreatedDate</th>
+                                                                        <th class="datatable-nosort">Action</th>
+                                                                    </tr>
                                                                 </thead>
                                                                 <tbody>
                                                         </HeaderTemplate>
@@ -104,7 +103,7 @@
                                                                 <td class="table-plus"><%# Eval("name") %></td>
                                                                 <td>
                                                                     <img alt="" width="40" src="<%# Foodie.Utils.GetImageUrl(Eval("image_url")) %>" />
-                                                                 </td>
+                                                                </td>
                                                                 <td>
                                                                     <asp:Label ID="lblIsActive" runat="server" Text='<%# Eval("is_active") %>'></asp:Label>
                                                                 </td>
@@ -140,4 +139,5 @@
             </div>
         </div>
     </div>
+
 </asp:Content>

@@ -22,7 +22,14 @@ namespace Foodie.Admin
             {
                 // displayed in Admin.Master breadCrum
                 Session["breadCrum"] = "Product";
-                getProducts();
+                if (Session["admin"] == null)
+                {
+                    Response.Redirect("../User/Login.aspx");
+                }
+                else
+                {
+                    getProducts();
+                }
             }
             lblMsg.Visible = false;
         }
