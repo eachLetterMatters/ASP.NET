@@ -114,7 +114,7 @@ $(".client_owl-carousel").owlCarousel({
             if (oldValue >= 10) {
                 var newVal = parseFloat(oldValue);
             } else {
-                newVal = newVal(oldValue) + 1;
+                newVal = parseFloat(oldValue) + 1;
             }
         } else {
             // Don't allow decrementing to 0

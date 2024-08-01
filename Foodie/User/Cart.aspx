@@ -16,7 +16,7 @@
         <div class="container">
             <asp:Repeater ID="repeaterCart" runat="server" OnItemCommand="repeaterCart_ItemCommand" OnItemDataBound="repeaterCart_ItemDataBound">
                 <HeaderTemplate>
-                    <table>
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -79,7 +79,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="continue__btn">
-                            <a href="Menu.aspx" class="btn btn-info"><i class="fa fa-arrow-circle-left mr-2">Continue Shopping</i></a>
+                            <a href="Menu.aspx" class="btn btn-info"><i class="fa fa-arrow-circle-left mr-2"></i>Continue Shopping</a>
                         </td>
                         <td>
                             <asp:LinkButton ID="lbUpdateCart" runat="server" CommandName="updateCart" CssClass="btn btn-warning">
@@ -88,7 +88,7 @@
                         </td>
                         <td>
                             <asp:LinkButton ID="lbCheckout" runat="server" CommandName="checkout" CssClass="btn btn-success">
-                                Checkout<i class="fa fa-arrow-circle-right mr-2"></i>
+                                Checkout <i class="fa fa-arrow-circle-right ml-2"></i>
                             </asp:LinkButton>
                         </td>
                     </tr>
