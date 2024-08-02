@@ -18,7 +18,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="../Template_Files/images/favicon.png" type="">
 
-    <title>Feane </title>
+    <title>Foodie</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="../Template_Files/css/bootstrap.css" />
@@ -67,7 +67,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <a class="navbar-brand" href="index.html">
-                            <span>Feane
+                            <span>Foodie
                             </span>
                         </a>
 
@@ -150,6 +150,9 @@
                                         <g>
                                         </g>
                                     </svg>
+                                    <span class="badge rounded-pill bg-warning mb-4">
+                                        <% Response.Write(Session["cartCount"]); %>
+                                    </span>
                                 </a>
                                 <div class="form-inline">
                                     <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -205,7 +208,7 @@
                     </div>
                     <div class="col-md-4 footer-col">
                         <div class="footer_detail">
-                            <a href="" class="footer-logo">Feane
+                            <a href="" class="footer-logo">Foodie
                             </a>
                             <p>
                                 Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with

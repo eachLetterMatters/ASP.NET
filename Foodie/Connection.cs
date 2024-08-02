@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Web;
+using Foodie.Admin;
 
 namespace Foodie
 {
@@ -79,5 +80,20 @@ namespace Foodie
             }
             return isUpdated;
         }
+
+        public int cartCount(int userId) 
+        {
+            connection = new SqlConnection(Connection.GetConnectionString());
+            command = new SqlCommand("Cart_Crud", connection);
+            command.Parameters.AddWithValue("@Action", "SELECT");
+            command.Parameters.AddWithValue("@UserId", userId);
+            command.CommandType = CommandType.StoredProcedure;
+            dataAdapter = new SqlDataAdapter(command);
+            dataTable = new DataTable();
+            dataAdapter.Fill(dataTable);
+            return dataTable.Rows.Count;
+        }
+
+
     }
 }
