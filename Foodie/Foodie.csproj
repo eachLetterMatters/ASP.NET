@@ -183,6 +183,10 @@
     <Content Include="Global.asax" />
     <Content Include="Images\login.jpg" />
     <Content Include="Images\no_image.jpg" />
+    <Content Include="Sql_Queries\cart_crud_procedures.sql" />
+    <Content Include="Sql_Queries\category_crud_procedures.sql" />
+    <Content Include="Sql_Queries\product_crud_procedures.sql" />
+    <Content Include="Sql_Queries\user_crud_procedures.sql" />
     <Content Include="Template_Files\css\bootstrap.css" />
     <Content Include="Template_Files\css\font-awesome.min.css" />
     <Content Include="Template_Files\css\responsive.css" />
